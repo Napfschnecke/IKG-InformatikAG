@@ -1,4 +1,4 @@
-package com.itag.oop;
+package com.itag.oop.calc;
 
 public class Main {
 
