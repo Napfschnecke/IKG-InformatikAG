@@ -1,0 +1,18 @@
+Implementiert ein Taschenrechner-Programm.
+
+Schreibt hierfür eine neue Klasse, die den Taschenrechner repräsentiert.
+Eine Instanz dieser Klasse soll dann in der Main erstellt werden und mit dem Aufruf ihrer start-Methode gestartet werden.
+
+Beim Aufruf dieser start-Methode soll ein Eingabefenster geöffnet werden,das Eingaben der Form [Zahl Operator Zahl]
+entgegen nimmt, die entsprechenden Methoden des Rechners mit den gegebenenWerten aufruft und das Ergebnis in der Konsole ausgibt.
+
+Unterstützte Operatoren sollen zunächst nur +, - und * sein. Wenn ihr schnell seid könnt ihr gerne weitere hinzufügen,
+bedenkt aber mögliche Edge-Cases (z.B. Teilen durch 0).
+
+Bei Eingabe des Wortes "end" soll das Programm beendet werden.
+Abschließend sollen alle getätigten Eingaben und deren Ergebnis ausgegeben werden.
+
+Zusatzaufgabe:
+Das Speichern von Eingaben und die Ausgabe beim Beenden könnte häufiger nützlich sein.
+Lagere diese Funktionalität in ein separates File aus und mache sie für den Taschenrechner verfügbar.
+(Vererbung, Interface)
