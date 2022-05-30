@@ -17,7 +17,7 @@ public abstract class ChessPiece{
         position = pos;
     }
 
-    public abstract List<BoardPosition> moves();
+    public abstract List<BoardPosition> calculateMoves();
 
     public abstract void printOptions();
 
@@ -26,7 +26,7 @@ public abstract class ChessPiece{
     }
 
     public void setPosition(BoardPosition position) {
-        if (moves().stream().anyMatch(bp -> bp.getX() == position.getX() && bp.getY() == position.getY())) {
+        if (calculateMoves().stream().anyMatch(bp -> bp.getX() == position.getX() && bp.getY() == position.getY())) {
             this.position = position;
         } else {
             System.out.println("Invalid move.");

@@ -10,7 +10,7 @@ public class Pawn extends ChessPiece{
     }
 
     @Override
-    public List<BoardPosition> moves() {
+    public List<BoardPosition> calculateMoves() {
         int x = getPosition().getX();
         int y = getPosition().getY();
         List<BoardPosition> options = new java.util.ArrayList<>(List.of(
@@ -31,7 +31,7 @@ public class Pawn extends ChessPiece{
             for (int k = 1; k < 9; k++) {
                 int finalI = i;
                 int finalK = k;
-                boolean isOption = moves().stream().anyMatch(bp -> bp.getX() == finalK && bp.getY() == 9 - finalI);
+                boolean isOption = calculateMoves().stream().anyMatch(bp -> bp.getX() == finalK && bp.getY() == 9 - finalI);
                 if (isOption) {
                     if (k != getPosition().getX()) {
                         System.out.print(ANSI_BLUE + " ■ " + ANSI_RESET);

@@ -1,7 +1,6 @@
 package com.itag.oop.chess;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Rook extends ChessPiece{
 
@@ -10,7 +9,7 @@ public class Rook extends ChessPiece{
     }
 
     @Override
-    public List<BoardPosition> moves() {
+    public List<BoardPosition> calculateMoves() {
         int x = getPosition().getX();
         int y = getPosition().getY();
         List<BoardPosition> options = new java.util.ArrayList<>(List.of());
@@ -31,7 +30,7 @@ public class Rook extends ChessPiece{
             for (int k = 1; k < 9; k++) {
                 int finalI = i;
                 int finalK = k;
-                boolean isOption = moves().stream().anyMatch(bp -> bp.getX() == finalK && bp.getY() == 9 - finalI);
+                boolean isOption = calculateMoves().stream().anyMatch(bp -> bp.getX() == finalK && bp.getY() == 9 - finalI);
                 if (isOption) {
                     System.out.print(ANSI_GREEN + " ■ " + ANSI_RESET);
                 } else if (k == getPosition().getX() && i == 9 - getPosition().getY()) {
