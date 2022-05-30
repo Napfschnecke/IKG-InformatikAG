@@ -2,7 +2,7 @@ package com.itag.oop.chess;
 
 import java.util.List;
 
-public class ChessPiece implements IChessPiece{
+public abstract class ChessPiece{
 
     public static final String ANSI_BLACK = "\u001B[30m";
     public static final String ANSI_WHITE = "\u001B[37m";
@@ -17,15 +17,9 @@ public class ChessPiece implements IChessPiece{
         position = pos;
     }
 
-    @Override
-    public List<BoardPosition> moves() {
-        return null;
-    }
+    public abstract List<BoardPosition> moves();
 
-    @Override
-    public void printOptions() {
-
-    }
+    public abstract void printOptions();
 
     public BoardPosition getPosition() {
         return position;

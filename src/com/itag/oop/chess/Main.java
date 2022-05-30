@@ -29,9 +29,9 @@ public class Main {
         b.printOptions();
          */
 
-        /*
+
         King king  = new King(new BoardPosition(1, 4));
         king.printOptions();
-         */
+
     }
 }
