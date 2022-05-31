@@ -23,25 +23,4 @@ public class Rook extends ChessPiece{
         }
         return options;
     }
-
-    @Override
-    public void printOptions() {
-        for (int i = 1; i < 9; i++) {
-            for (int k = 1; k < 9; k++) {
-                int finalI = i;
-                int finalK = k;
-                boolean isOption = calculateMoves().stream().anyMatch(bp -> bp.getX() == finalK && bp.getY() == 9 - finalI);
-                if (isOption) {
-                    System.out.print(ANSI_GREEN + " ■ " + ANSI_RESET);
-                } else if (k == getPosition().getX() && i == 9 - getPosition().getY()) {
-                    System.out.print(ANSI_YELLOW + " ■ " + ANSI_RESET);
-                } else if ((i + k) % 2 == 0) {
-                    System.out.print(ANSI_WHITE + " ■ " + ANSI_RESET);
-                } else {
-                    System.out.print(ANSI_WHITE + " □ " + ANSI_RESET);
-                }
-            }
-            System.out.println();
-        }
-    }
 }
