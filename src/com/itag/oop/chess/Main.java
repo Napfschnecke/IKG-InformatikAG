@@ -18,10 +18,10 @@ public class Main {
         r.printOptions();
          */
 
-        /*
+
         Queen q = new Queen(new BoardPosition(4, 4));
         q.printOptions();
-         */
+
 
 
         /*
@@ -29,9 +29,9 @@ public class Main {
         b.printOptions();
          */
 
-
+        /*
         King king  = new King(new BoardPosition(1, 4));
         king.printOptions();
-
+        */
     }
 }
