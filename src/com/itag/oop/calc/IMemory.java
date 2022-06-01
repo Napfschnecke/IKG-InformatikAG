@@ -13,9 +13,7 @@ public interface IMemory {
     default void printHistoryAndExit() {
         System.out.println("Shutdown initialized.");
         System.out.println("Memory dump:");
-        for (String s: history) {
-            System.out.println(s);
-        }
+        history.forEach(System.out::println);
         System.exit(0);
     }
 }

@@ -10,9 +10,8 @@ Unterstützte Operatoren sollen zunächst nur +, - und * sein. Wenn ihr schnell 
 bedenkt aber mögliche Edge-Cases (z.B. Teilen durch 0).
 
 Bei Eingabe des Wortes "end" soll das Programm beendet werden.
-Abschließend sollen alle getätigten Eingaben und deren Ergebnis ausgegeben werden.
+Abschließend sollen alle während der Ausführung getätigten Eingaben und deren Ergebnisse ausgegeben werden.
 
 Zusatzaufgabe:
 Das Speichern von Eingaben und die Ausgabe beim Beenden könnte häufiger nützlich sein.
-Lagere diese Funktionalität in ein separates File aus und mache sie für den Taschenrechner verfügbar.
-(Vererbung, Interface)
+Lagere diese Funktionalität in ein separates File aus und mache sie für den Taschenrechner verfügbar. (Interface)
