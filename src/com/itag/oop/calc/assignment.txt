@@ -3,7 +3,7 @@
 Schreibt hierfür eine neue Klasse, die den Taschenrechner repräsentiert.
 Eine Instanz dieser Klasse soll dann in der Main erstellt werden und mit dem Aufruf ihrer start-Methode gestartet werden.
 
-Beim Aufruf der start-Methode soll ein Eingabefenster geöffnet werden,das Eingaben der Form [Zahl Operator Zahl]
+Beim Aufruf der start-Methode soll ein Eingabefenster geöffnet werden,das Eingaben der Form [Ganzzahl Operator Ganzzahl] (Bsp: 4 + 4, 6 * 4, 13 - 5)
 entgegen nimmt, die entsprechenden Methoden des Rechners mit den gegebenen Werten aufruft und das Ergebnis in der Konsole ausgibt.
 
 Unterstützte Operatoren sollen zunächst nur +, - und * sein. Wenn ihr schnell seid könnt ihr gerne weitere hinzufügen,
@@ -12,6 +12,29 @@ bedenkt aber mögliche Edge-Cases (z.B. Teilen durch 0).
 Bei Eingabe des Wortes "end" soll das Programm beendet werden.
 Abschließend sollen alle während der Ausführung getätigten Eingaben und deren Ergebnisse ausgegeben werden.
 
-Zusatzaufgabe:
+
+
+
+
+
+
+
+
+
+
+
+Zusatzaufgabe 1:
+User sind dumm und geben gerne falsch formatierte Dinge ein. Eingaben die nicht im Format Zahl-Leerzeichen-(+ | - | *)-Leerzeichen-Zahl sind
+sollten Abgefangen werden und "Falsches Format" in die Konsole printen. Regex-Matching eignet sich hierfür sehr gut.
+
+
+
+
+
+
+
+
+
+Zusatzaufgabe 2:
 Erstelle ein Interface, das von allen Klassen benutzt werden kann, die Eingaben speichern und zum Schluss ausgeben wollen.
 Es sollte 2 Methoden besitzen (Speichern und Ausgeben). Lasst eure Klasse dann dieses Interface implementieren.

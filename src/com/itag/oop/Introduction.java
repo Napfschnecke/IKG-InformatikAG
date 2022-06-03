@@ -1,5 +1,8 @@
 package com.itag.oop;
 
+enum State {
+    OK, ERROR
+}
 public class Introduction {
 
 
@@ -7,10 +10,12 @@ public class Introduction {
 
     private int attribute;
 
-    private State state = State.OK;
+    private State state;
 
 
-    public Introduction() {}
+    public Introduction(State state) {
+        this.state = state;
+    }
 
     public void increment() {
         this.attribute++;
@@ -26,8 +31,4 @@ public class Introduction {
             case ERROR -> System.out.println("Wallah Krise.");
         }
     }
-}
-
-enum State {
-    OK, ERROR
 }
